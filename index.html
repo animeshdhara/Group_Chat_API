@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iChat- Realtime web chat application</title>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="Js/client.js"></script>
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo"><img src="Chat2.png" alt=""></div>
+        <div id="time">time</div>
+    </div>
+    <div class="container">
+        <!-- <div class="message right">Animesh: hey how are you</div>
+        <div class="message left">Arnab: I am finde</div> -->
+    </div>
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" name="messageInp" id="messageInp" placeholder="Type here">
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>

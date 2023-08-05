@@ -1,0 +1,120 @@
+.header{
+    display: flex;
+    
+}
+#time{
+    border: 2px solid #00deff;
+    background-color: #00fff138;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 5px 8px;
+    box-shadow: 5px 5px 5px 1px grey;
+    cursor: pointer;
+    position: fixed;
+    top: 0px;
+
+}
+#time:hover{
+    transform: translate(-5px,-5px);
+}
+
+.logo{
+    display: block;
+    margin: auto;
+    height: 50px;
+    width: 50px;
+    
+}
+.logo img{
+    height: inherit;
+    width: inherit;
+    /* border: 2px solid black; */
+    border-radius: 30px;
+}
+body{
+    background-image:linear-gradient(rgb(244, 244, 250),rgb(142, 197, 239)) ;
+    height: 100vh;
+}
+
+.container{
+    /* background-color: red; */
+    width: 80%;
+    margin: auto;
+    height: 70vh;
+    /* border: 2px solid black; */
+    padding: 33px;
+    overflow-y:auto;
+    margin-bottom: 10px;
+}
+.message{
+    background-color: rgb(204, 238, 197);
+    width: 45%;
+    padding: 10px;
+    margin: 5px 2px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.message:hover{
+    background-color: rgb(148, 235, 148);
+}
+.left{
+    float: left;
+    clear: both;
+}
+.right{
+    float: right;
+    clear: both;
+}
+
+#send-container{
+    text-align: center;
+}
+#messageInp{
+    width: 30%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.2rem;
+    transition: all 1s ease-in 0s;
+}
+#messageInp:hover{
+    background-color: rgb(234, 223, 223);
+}
+@media only screen and (max-width:400px) {
+    .message{
+        width: 70%;
+        padding: 5px;
+        /* background-color: red; */
+    }
+    #messageInp{
+        font-size: 1rem;
+    }
+    .container{
+        height: 75vh;
+        padding: 5px;
+        margin: 5px;
+        width: 90%;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #time{
+        font-size: 1rem;
+    }
+}
+.btn{
+    padding: 8px;
+    font-size: 1.3rem;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    /* width: 8%; */
+    box-shadow: 4px 3px 5px 1px grey ;
+}
+.btn:hover{
+    background-color: beige;
+}
